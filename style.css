@@ -1,0 +1,95 @@
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body {
+    text-align: center;
+}
+.formWrapper {
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+    position: relative;
+    padding: 20px 50px;
+}
+.formWrapper h1 {
+    margin-bottom: 90px;
+}
+#form {
+    text-align: center;
+}
+.lg {
+    width: 100%;
+    float: left;
+    text-align: left;
+    margin: 10px auto;
+}
+.sm {
+    width: 48%;
+    float: left;
+    text-align: left;
+    margin: 10px auto;
+}
+.sm:nth-child(2) {
+    margin-right: 4% !important;
+}
+#form input {
+    width: 100%;
+    line-height: 30px;
+    margin-top: 10px;
+    position: relative;
+}
+label {
+    font-weight: bold;
+}
+.red {
+    color: red;
+}
+.invalid {
+    border: 1px solid red;
+}
+button {
+    padding: 10px 20px;
+    background: #607d8b;
+    border: none;
+    transition: .2s;
+    width: 100%;
+    margin: 10px auto;
+    color: white;
+}
+button:hover {
+    cursor: pointer;
+    transform: scale(0.98);
+    transition: .2s;
+}
+.message {
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+    padding: 10px 20px;
+    opacity: 1;
+    color: #fff;
+    transition: all .4s;
+}
+.message:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 20%;
+    bottom: -10px;
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-width: 15px 8px 0 8px;
+    border-color: black transparent transparent transparent;
+    transition: all .4s
+}
+.hidden {
+    opacity: 1;
+    transition: all .5s;
+}
+.form-errors {
+    position: absolute;
+    top: 78px;
+    text-align: left;
+}

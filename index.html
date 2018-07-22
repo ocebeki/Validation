@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="style.css" rel="stylesheet">
+    <title>Validation form</title>
+</head>
+
+<body>
+    <h1>Contact form project</h1>
+
+    <div class="formWrapper">
+        <h1>Contact Form</h1>
+        <form id="form" method="post" name="myForm" action="action.html">
+            <div class="lg">
+                <label for="mail">Mail adress <span class="red">*</span></label>
+                <input placeholder="Email" name="email" title="Insert your email" id="mail">
+            </div>
+            <div class="sm">
+                <label for="name">Name <span class="red">*</span></label>
+                <input type="text" placeholder="User Name" name="userName" title="Insert your name" id="name">
+            </div>
+            <div class="sm">
+                <label for="password">Password <span class="red">*</span></label>
+                <input type="password" placeholder="Password" name="password" title="Must contain at least one number and one capital letter" id="password">
+            </div>
+            <button type="submit">SEND</button>
+        </form>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
