@@ -27,7 +27,6 @@
 
     }
     Validator.prototype.validatePassword = function (str) {
-        // patter to match : Atleast one number ,one capital letter, one special charector
         var reg = /^(((.*\d.*[A-Z].*[!@#$%^&amp;amp;*? ~].*))|(.*[A-Z].*\d.*[!@#$%^&amp;amp;*? ~].*)|(.*[!@#$%^&amp;amp;*? ~].*[A-Z].*\d.*)|(.*[!@#$%^&amp;amp;*? ~].*\d.*[A-Z].*))$/;
         if (reg.test(str)) {
             return true;
@@ -66,7 +65,7 @@
         }
 
         if (!this.validatePassword(this.passwordForm.value)) {
-            this.errors.push("Insert password");
+            this.errors.push("Insert password(At least one number ,one capital letter, one special character)");
             this.passwordForm.classList.add("invalid");
         } else {
             this.passwordForm.classList.remove("invalid");
