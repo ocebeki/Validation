@@ -10,7 +10,7 @@ body {
     margin: auto;
     text-align: left;
     position: relative;
-    padding: 20px 50px;
+    padding: 20px 0;
 }
 .formWrapper h1 {
     margin-bottom: 90px;
@@ -40,8 +40,6 @@ body {
     position: relative;
     outline: none;
 }
-
-
 
 label {
     font-weight: bold;
@@ -94,7 +92,7 @@ button:hover {
 }
 .form-errors {
     position: absolute;
-    top: 78px;
+    top: 64px;
     text-align: left;
 }
 @media (max-width:356px){
